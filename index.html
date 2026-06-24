@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akari Glow</title>
+  <meta name="description" content="Akari Glow is a relaxing offline logic puzzle about placing bulbs, lighting every square, and solving each grid with clean deduction.">
+  <meta name="keywords" content="akari, light up, puzzle, logic, brain, grid, bulb, offline, relaxing, number">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #070503;
+      --panel: rgba(16, 14, 11, 0.78);
+      --text: #fff9ec;
+      --muted: #c8bda8;
+      --gold: #ffbd30;
+      --line: rgba(255, 189, 48, 0.24);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 70% 15%, rgba(255, 180, 40, 0.18), transparent 30%), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      min-height: 76vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 72px 0 48px;
+      background:
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.65)),
+        url("AppStoreAssets/web/ipad-menu.jpg") center/cover;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 9vw, 108px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    .tagline {
+      margin: 22px auto 0;
+      max-width: 680px;
+      color: var(--text);
+      font-size: clamp(18px, 2.8vw, 28px);
+      font-weight: 700;
+    }
+    .meta {
+      margin-top: 28px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    section {
+      padding: 56px 0;
+      border-top: 1px solid var(--line);
+    }
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(30px, 5vw, 54px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0 0 18px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 18px;
+      min-height: 112px;
+    }
+    .feature strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--gold);
+      font-size: 18px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 26px;
+    }
+    .shot {
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #000;
+    }
+    .shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .store-copy {
+      white-space: pre-line;
+      color: var(--muted);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      font-size: 16px;
+    }
+    footer {
+      padding: 36px 0 48px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+    a { color: var(--gold); }
+    @media (max-width: 760px) {
+      .features, .gallery { grid-template-columns: 1fr; }
+      header { min-height: 66vh; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Akari Glow</h1>
+      <div class="tagline">Light every square with calm logic.</div>
+      <div class="meta">Offline puzzle game · 50 levels · Star ratings · Hints and undo</div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <h2>A quiet logic challenge</h2>
+        <p>Akari Glow is a relaxing puzzle game inspired by the classic Light Up puzzle. Place bulbs so every open square is illuminated, follow numbered block clues, and avoid bulbs shining directly at each other.</p>
+        <p>Each level rewards clean deduction instead of speed. It is easy to learn, satisfying to master, and built for short thoughtful sessions.</p>
+        <div class="features">
+          <div class="feature"><strong>Light the board</strong>Use bulbs to illuminate every open square across the grid.</div>
+          <div class="feature"><strong>Follow the clues</strong>Numbered blocks show exactly how many bulbs must touch them.</div>
+          <div class="feature"><strong>Play offline</strong>No account required. Progress and stars are saved locally.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Screenshots</h2>
+        <p>Compressed preview images are used on this page for faster loading. Full-size App Store screenshots are included in the AppStoreAssets folder.</p>
+        <div class="gallery">
+          <div class="shot"><img src="AppStoreAssets/web/iphone-gameplay.jpg" alt="Akari Glow iPhone gameplay screenshot"></div>
+          <div class="shot"><img src="AppStoreAssets/web/iphone-advanced.jpg" alt="Akari Glow iPhone advanced level screenshot"></div>
+          <div class="shot"><img src="AppStoreAssets/web/iphone-puzzle.jpg" alt="Akari Glow iPhone puzzle screenshot"></div>
+          <div class="shot"><img src="AppStoreAssets/web/ipad-menu.jpg" alt="Akari Glow iPad main menu screenshot"></div>
+          <div class="shot"><img src="AppStoreAssets/web/ipad-gameplay.jpg" alt="Akari Glow iPad gameplay screenshot"></div>
+          <div class="shot"><img src="AppStoreAssets/web/ipad-puzzle.jpg" alt="Akari Glow iPad puzzle screenshot"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>App Store Copy</h2>
+        <div class="store-copy">Subtitle:
+Light every square with logic
+
+Keywords:
+akari,light up,puzzle,logic,brain,grid,bulb,offline,relaxing,number
+
+Description:
+Akari Glow is a relaxing logic puzzle inspired by the classic Light Up puzzle.
+
+Place bulbs on the board so every open square is illuminated. Numbered blocks tell you exactly how many bulbs must touch them, and bulbs may not shine directly at each other. Each level is solved through observation, deduction, and a little patience.
+
+Features:
+- 50 handcrafted-style generated levels
+- Gradually increasing difficulty
+- Clean bulb, mark, undo, and hint controls
+- Star ratings and local progress saving
+- Offline play with no account required
+- Atmospheric light-and-shadow visual style
+- Background music and sound effect settings
+
+Akari Glow is easy to learn, satisfying to master, and designed for short thoughtful sessions whenever you want a quiet brain challenge.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Contact: <a href="mailto:508923216@qq.com">508923216@qq.com</a> · <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
